@@ -20,4 +20,9 @@ public class LeapYearTest {
     public void yearsDivisibleByHundredAreNotLeapYears() {
         assertFalse(LeapYear.isLeap(1900));
     }
+
+    @Test
+    public void yearsDivisibleByFourHundredAreLeapYears() {
+        assertTrue(LeapYear.isLeap(2000));
+    }
 }
